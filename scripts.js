@@ -1,6 +1,7 @@
 const galleryImages = document.querySelectorAll('.gallery-item img');
 const modal = document.getElementById('modal');
 const modalImagesContainer = document.getElementById('modal-images');
+const modalLabel = document.getElementById("modal-label");
 const closeModalBtn = document.querySelector('.close');
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryContainers = document.querySelectorAll('.gallery-container');
@@ -19,10 +20,6 @@ function openModal(clickedImageSrc, galleryGroup) {
         const imageGallery = image.closest('.gallery-container').getAttribute('data-gallery');
         return imageGallery === galleryGroup;
     });
-
-    // Log for debugging: check if gallery group images are properly filtered
-    console.log("Gallery Group:", galleryGroup);
-    console.log("Images in Group:", currentGalleryImages.map(img => img.src));
 
     // Add filtered images to the modal
     currentGalleryImages.forEach((image) => {
