@@ -41,6 +41,10 @@ body {
     width: 60px;
     /* height: 80px; */
     background-color: rgba(214, 214, 214, 0);
+    opacity: 85%;
+    &&:hover {
+        opacity: 100%;
+    }
 }
 
 #logo img {
@@ -456,13 +460,15 @@ div.details-list {
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
-    background-color: #28a828;
     border-radius: 2rem;
+    background-color: #28a828;
     &&:hover {
-        background-color:#1f7d1f;
+        color: #2a2a2a;
+        background-color: #21e621;
     }
     &&:active {
         background-color: #28a828;
+        color: white;
     }
 }
 
