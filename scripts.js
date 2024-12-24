@@ -2,8 +2,6 @@
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
 const overlay = document.getElementById('overlay');
-const menuLinks = menu.querySelectorAll('a');
-// gallery
 const galleryImages = document.querySelectorAll('.gallery-item img');
 const modal = document.getElementById('modal');
 const modalImagesContainer = document.getElementById('modal-images');
@@ -70,7 +68,7 @@ window.addEventListener('touchend', function(event) {
 });
 
 window.addEventListener('click', function(event) {
-    if (event.target === modalImagesContainer) {
+    if (event.target === modal) {
         setTimeout(closeModal, 5);
     }
 });
@@ -118,8 +116,6 @@ document.querySelectorAll('.next').forEach(button => {
 
 // Navigation
 
-    // Select elements
-
     // Toggle menu and overlay on click
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('active');
@@ -131,11 +127,34 @@ document.querySelectorAll('.next').forEach(button => {
         menu.classList.remove('active');
         overlay.classList.remove('active');
     });
+    
+    // Listen for mobile menu 
+    document.addEventListener('DOMContentLoaded', function () {
+        // Select menu, overlay, and menu links (adjust selectors as needed)
+        const menu = document.querySelector('.menu'); // Replace with your actual menu selector
+        const overlay = document.querySelector('.overlay'); // Replace with your actual overlay selector
+        const menuLinks = menu ? menu.querySelectorAll('a') : []; // Scope to menu
+    
+        if (menuLinks.length > 0) {
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    console.log("Menu link clicked!");
+                    console.log(link);
+    
+                    // Close the menu and overlay
+                    if (menu) menu.classList.remove('active');
+                    if (overlay) overlay.classList.remove('active');
+                });
+            });
+        } else {
+            console.log("No menu links found inside the menu.");
+        }
+    });
 
     // Close menu when a link is clicked
-    menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        menu.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-});
+    // menuLinks.forEach(link => {
+    // link.addEventListener('click', () => {
+    //     menu.classList.remove('active');
+    //     overlay.classList.remove('active');
+    //     });
+    // });

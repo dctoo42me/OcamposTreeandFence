@@ -7,12 +7,13 @@
     <meta property="og:description" content="Explore our projects and let the results speak for themselves—because we’re confident you’ll see the difference." />
     <meta property="og:image" content="https://raw.githubusercontent.com/dctoo42me/Yaris-FSBO/refs/heads/main/images/car4.jpg" />
     <meta property="og:image:alt" content="Ocampos Tree and Fence" />
-    <script>
+    <!-- <script>
         // Detect the environment: local server vs. GitHub Pages
         const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
         const baseHref = isLocal ? '/' : '/OcamposTreeandFence/';
         document.write(`<base href="${baseHref}">`);
-    </script>    <title>Ocampos Projects</title>
+    </script>     -->
+    <title>Ocampos Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
                     <img src="images/logo/Ocampos-logo.png" alt="logo">
                 </div>
             </a>
-            <ul>
+            <ul class="desktop">
                 <a class="button" href="index.html">
                     <li>Home</li>
                 </a>
@@ -33,13 +34,41 @@
                 <a class="button" href="index.html#portfolio">
                     <li>Portfolio</li>
                 </a>
-                <a class="button" href="projects/projects.html">
+                <a class="button" href="projects.html">
                     <li>Projects</li>
                 </a>
                 <a class="button" href="#third">
                     <li>Contact</li>
                 </a>
             </ul>
+                <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <!--Mobile Navigation Menu -->
+            <ul class="menu" id="menu">
+                <div class="menu-content">
+                    <a class="button" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="button" href="index.html#services">
+                        <li>Services</li>
+                    </a>
+                    <a class="button" href="index.html#portfolio">
+                        <li>Portfolio</li>
+                    </a>
+                    <a class="button" href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a class="button" href="#third">
+                        <li>Contact</li>
+                    </a>
+                </div>
+            </ul>
+            <!-- Blackout Background -->
+            <div class="overlay" id="overlay"></div>
         </nav>
     </div>
     <div class="main-container">
@@ -47,13 +76,13 @@
         <div class="section-container">
             <section id="hero" class="main nav-m-offset">
                 <div class="heading-small green">
-                    <h1>FENCE AND GATE PROJECTS</h1>
-                    <p>Quality Fence and Gate Installation and Repair Services</p>
+                    <h1>TREE CARE PROJECTS</h1>
+                    <p>Comprehensive Tree Care, Removal, and Maintenance Services</p>
                     <!-- <h3 class="price">$7,000.00</h3> -->
                 </div>
                 
                 <div class="hero-image">
-                    <img src="projects/fencing/fencing.jpg" alt="best work photo">
+                    <img src="/projects/landscaping/treeCare.jpg" alt="best work photo">
                 </div>
 
                 <div id="services" class="margin-top-100"></div>
@@ -64,37 +93,17 @@
                     
                     <div class="gallery-container" data-gallery="gallery1">
                         <div class="gallery">
-                            <button class="prev">❮</button> <!-- Previous Arrow -->
+                            <button class="prev">❮</button>
+                            <!-- Previous Arrow -->
                             
                             <div class="gallery-item">
-                                <img src="projects/fencing/fence line/1.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/hazardous tree safely removed/1.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="projects/fencing/fence line/2.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/hazardous tree safely removed/2.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="projects/fencing/fence line/3.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/4.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/5.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/6.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/7.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/8.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/9.jpg" alt="Project image 1" />
-                            </div>
-                            <div class="gallery-item">
-                                <img src="projects/fencing/fence line/10.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/hazardous tree safely removed/3.jpg" alt="Project image 1" />
                             </div>
                                                 
                             <!-- More images here -->
@@ -111,13 +120,12 @@
                             <div class="modal-images" id="modal-images">
                                 <!-- All images will be injected here -->
                             </div>
-                        <div id="modal-label" class="modal-label"></div>
                         </div>
                     </div>
 
                 </div>
                 <div>
-                    <h3>CLEARING OLD FENCE AND INSTALLING NEW METAL POST AND CEDAR FENCE LINE</h3>
+                    <h3>HAZARDOUS LEANING TREE REMOVED FROM BESIDE HOME</h3>
                 </div>
             </section>
             <section id="second" class="content even nav-m-offset">
@@ -126,13 +134,54 @@
 
                     <div class="gallery-container" data-gallery="gallery2">
                         <div class="gallery">
-                            <button class="prev">❮</button> <!-- Previous Arrow -->
+                            <button class="prev">❮</button>
+                            <!-- Previous Arrow -->
                             
                             <div class="gallery-item">
-                                <img src="projects/fencing/metal post cedar pickets/1.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/tree_stump removal/2.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="projects/fencing/metal post cedar pickets/2.jpg" />
+                                <img src="projects/landscaping/tree_stump removal/1.jpg" alt="Project image 1" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projects/landscaping/tree_stump removal/3.jpg" alt="Project image 1" />
+                            </div>
+                                                
+                            <!-- More images here -->
+                            <button class="next">❯</button> 
+                            <!-- Next Arrow -->
+                        </div>
+                        <!-- <div class="m-t-20">
+                            <a class="green projects" href="#">View Projects</a>
+                        </div> -->
+                    </div>
+                    <div class="modal" id="modal">
+                        <span class="close">&times;</span>
+                        <div class="modal-content">
+                            <div class="modal-images" id="modal-images">
+                                <!-- All images will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>COMPLETE REMOVAL OF LARGE TREE IN FRONT OF HOME</h3>
+                </div>
+            </section>
+            <section id="second" class="content odd nav-m-offset">
+                <div class="heading">
+                    <!-- <h2>Tree Care Projects</h2> -->
+                    
+                    <div class="gallery-container" data-gallery="gallery3">
+                        <div class="gallery">
+                            <!-- <button class="prev">❮</button> -->
+                            <!-- Previous Arrow -->
+                            
+                            <div class="gallery-item">
+                                <img src="projects/landscaping/Tree top trim/1.jpg" alt="Project image 1"/>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projects/landscaping/Tree top trim/2.jpg" alt="Project image 2" />
                             </div>
                                                 
                             <!-- More images here -->
@@ -151,28 +200,27 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div>
-                    <h3>METAL POSTS AND CEDAR PICKETS INSTALLED</h3>
+                    <h3>TREE TOP TRIMMED DOWN</h3>
                 </div>
             </section>
-            <section id="second" class="content odd nav-m-offset">
+            <section id="second" class="content even nav-m-offset">
                 <div class="heading">
-                    <!-- <h2>Tree Care Projects</h2> -->
-                    
-                    <div class="gallery-container" data-gallery="gallery3">
+                    <!-- <h2 class="gray">Tree Care Projects</h2> -->
+
+                    <div class="gallery-container" data-gallery="gallery4">
                         <div class="gallery">
-                            <button class="prev">❮</button> <!-- Previous Arrow -->
+                            <button class="prev">❮</button>
+                            <!-- Previous Arrow -->
                             
                             <div class="gallery-item">
-                                <img src="projects/fencing/wooden post cedar pickets/1.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/trees pool/poolTrees1.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="projects/fencing/wooden post cedar pickets/2.jpg" alt="Project image 1" />
-                            </div>             
-                            <div class="gallery-item">
-                                <img src="projects/fencing/wooden post cedar pickets/3.jpg" alt="Project image 1" />
-                            </div>             
+                                <img src="projects/landscaping/trees pool/poolTrees2.jpg" alt="Project image 1" />
+                            </div>              
                             <!-- More images here -->
                             <button class="next">❯</button> 
                             <!-- Next Arrow -->
@@ -187,13 +235,11 @@
                             <div class="modal-images" id="modal-images">
                                 <!-- All images will be injected here -->
                             </div>
-                        <div id="modal-label" class="modal-label"></div>
                         </div>
                     </div>
-
                 </div>
                 <div>
-                    <h3>WOODEN POSTS AND CEDAR PICKETS INSTALLED</h3>
+                    <h3>BACKYARD TREES TRIMMED BACK AROUND POOL</h3>
                 </div>
             </section>
             <section id="third" class="contact nav-m-offset">
