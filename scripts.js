@@ -1,3 +1,9 @@
+// navigation
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const menuLinks = menu.querySelectorAll('a');
+// gallery
 const galleryImages = document.querySelectorAll('.gallery-item img');
 const modal = document.getElementById('modal');
 const modalImagesContainer = document.getElementById('modal-images');
@@ -107,5 +113,29 @@ document.querySelectorAll('.next').forEach(button => {
         currentGalleryImages = Array.from(document.querySelectorAll(`.gallery-container[data-gallery="${galleryGroup}"] .gallery-item img`));
         currentIndex = (currentIndex + 1) % currentGalleryImages.length;
         currentGalleryImages[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    });
+});
+
+// Navigation
+
+    // Select elements
+
+    // Toggle menu and overlay on click
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    overlay.addEventListener('click', () => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    // Close menu when a link is clicked
+    menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
     });
 });

@@ -7,7 +7,12 @@
     <meta property="og:description" content="We specialize in expert tree care, removal, and fence and gate installation." />
     <meta property="og:image" content="https://raw.githubusercontent.com/dctoo42me/Yaris-FSBO/refs/heads/main/images/car4.jpg" />
     <meta property="og:image:alt" content="Ocampos Tree and Fence" />
-    <base href="/OcamposTreeandFence/" />
+    <script>
+        // Detect the environment: local server vs. GitHub Pages
+        const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+        const baseHref = isLocal ? './' : '/OcamposTreeandFence/';
+        document.write(`<base href="${baseHref}">`);
+    </script>
     <title>Ocampos Tree and Fence</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +24,7 @@
                     <img src="images/logo/Ocampos-logo.png" alt="logo">
                 </div>
             </a>
-            <ul>
+            <ul class="desktop">
                 <a class="button" href="index.html">
                     <li>Home</li>
                 </a>
@@ -36,6 +41,34 @@
                     <li>Contact</li>
                 </a>
             </ul>
+                <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <!--Mobile Navigation Menu -->
+            <ul class="menu" id="menu">
+                <div class="menu-content">
+                    <a class="button" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="button" href="index.html#services">
+                        <li>Services</li>
+                    </a>
+                    <a class="button" href="index.html#portfolio">
+                        <li>Portfolio</li>
+                    </a>
+                    <a class="button" href="projects/projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a class="button" href="#third">
+                        <li>Contact</li>
+                    </a>
+                </div>
+            </ul>
+            <!-- Blackout Background -->
+            <div class="overlay" id="overlay"></div>
         </nav>
     </div>
     <div class="main-container">
@@ -88,19 +121,19 @@
                             <div>
                                 <h3 class="label-1">BEFORE</h3>
                             </div>
-                            <img src="projects/landscaping/Tree top trim/1.jpg" alt="Project image 1" />
+                            <img src="projects/landscaping/Tree top trim/1.jpg" alt="portfolio image 1" />
                         </div>
                         <div class="gallery-item">
                             <div>
                                 <h3 class="label-1">AFTER</h3>
                             </div>
-                            <img src="projects/landscaping/Tree top trim/2.jpg" alt="Project image 1" />
+                            <img src="projects/landscaping/Tree top trim/2.jpg" alt="portfolio image 2" />
                         </div>
                         <div class="gallery-item">
                             <div>
                                 <h3 class="label-2">BEFORE</h3>
                             </div>
-                            <img src="projects/fencing/fence line/1.jpg" alt="Project image 1" />
+                            <img src="projects/fencing/fence line/1.jpg" alt="portfolio image " />
                         </div>
                         <div class="gallery-item">
                             <div>

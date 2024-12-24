@@ -7,8 +7,12 @@
     <meta property="og:description" content="Explore our projects and let the results speak for themselves—because we’re confident you’ll see the difference." />
     <meta property="og:image" content="https://raw.githubusercontent.com/dctoo42me/Yaris-FSBO/refs/heads/main/images/car4.jpg" />
     <meta property="og:image:alt" content="Ocampos Tree and Fence" />
-    <base href="/OcamposTreeandFence/" />
-    <title>Ocampos Projects</title>
+    <script>
+        // Detect the environment: local server vs. GitHub Pages
+        const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+        const baseHref = isLocal ? '/' : '/OcamposTreeandFence/';
+        document.write(`<base href="${baseHref}">`);
+    </script>    <title>Ocampos Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -151,13 +155,13 @@
                             <button class="prev">❮</button> <!-- Previous Arrow -->
                             
                             <div class="gallery-item">
-                                <img src="/projects/landscaping/landscape design_rocks/1.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/landscape design_rocks/1.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="/projects/landscaping/landscape design_rocks/2.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/landscape design_rocks/2.jpg" alt="Project image 1" />
                             </div>
                             <div class="gallery-item">
-                                <img src="/projects/landscaping/landscape design_rocks/3.jpg" alt="Project image 1" />
+                                <img src="projects/landscaping/landscape design_rocks/3.jpg" alt="Project image 1" />
                             </div>
                                                 
                             <!-- More images here -->
