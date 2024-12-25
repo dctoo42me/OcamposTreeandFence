@@ -444,18 +444,13 @@ button:active {
     margin-bottom: 10px;
 }
 
-/* .content.even h3 {
-    /* color: rgb(232, 232, 232); 
-    color: rgb(29, 29, 29);
-} */
-
 .about-us h2, .projects h2 {
     color: #282828;
 }
 
 .about-us h3 {
     font-weight: 100;
-    text-align: left;
+    /* text-align: left; */
     line-height: 1.5;
     color: #242424;
 }
@@ -623,6 +618,26 @@ section.footer {
         /* opacity: 95%; */
     }
 
+    div.description {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    .content h3 {
+        text-align: center;
+        width: 80%;
+    }
+
+    .content .about h3 {
+        text-align: left;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
     .main-container {
         max-width: 100vw;
     }
@@ -670,13 +685,22 @@ section.footer {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        align-items: start;
+        align-items: center;
         padding-left: 20px;
+    }
+
+    div.heading-small {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .heading-small p {
         font-size: 1.25rem;
         text-align: center;
+        width: 70%;
     }
 
     .details-list ul {
@@ -684,6 +708,10 @@ section.footer {
         flex-wrap: nowrap;
         gap: 10px 20px;
         height: 100%;
+    }
+
+    .details-list li {
+        font-size: 1.8rem;
     }
 
     .heading {
@@ -711,9 +739,11 @@ section.footer {
         font-size: 2.5rem;
     }
 
-    .heading-small {
-        font-size: 1rem;
+    div.heading-small p {
+
+        font-size: 1.25rem;
         line-height: 1.4;
+
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
