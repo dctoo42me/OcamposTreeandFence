@@ -158,3 +158,19 @@ document.querySelectorAll('.next').forEach(button => {
     //     overlay.classList.remove('active');
     //     });
     // });
+    function hideNow() {
+        const pageDiv = document.querySelector('.page');
+        const hidden = document.querySelector('.hidden');
+        if (pageDiv) {
+            pageDiv.style.display = 'none';
+            hidden.style.display = 'block';
+        }
+    }
+    function unhideNow() {
+        const pageDiv = document.querySelector('.page');
+        const hidden = document.querySelector('.hidden');
+        if (pageDiv) {
+            pageDiv.style.display = 'block';
+            hidden.style.display = 'none';
+        }
+    }
