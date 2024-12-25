@@ -62,13 +62,13 @@ if (closeModalBtn) {closeModalBtn.addEventListener('click', function() {
 }
 // Close modal when clicking outside the modal content
 window.addEventListener('touchend', function(event) {
-    if (event.target === modal) {
+    if (event.target === modalImagesContainer || event.target === modal) {
         setTimeout(closeModal, 5);
     }
 });
 
 window.addEventListener('click', function(event) {
-    if (event.target === modal) {
+    if (event.target === modalImagesContainer || event.target === modal) {
         setTimeout(closeModal, 5);
     }
 });
