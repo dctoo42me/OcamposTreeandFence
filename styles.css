@@ -546,6 +546,80 @@ div.details-list {
     margin-left: 5px;
 }
 
+/******************* SOCIAL **********************/
+
+/* Social Media Section Styling */
+.social-media {
+    margin-top: 50px;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #f9f9f900; /* Light background for contrast */
+}
+
+.social-media h3 {
+font-size: 1.8rem;
+color: #fff;
+margin-bottom: 15px;
+font-family: 'Arial', sans-serif;
+text-transform: uppercase;
+}
+
+.social-media ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+}
+
+.social-media ul li {
+display: inline-block;
+}
+
+.social-media a {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #ddd;
+color: #fff;
+font-size: 24px;
+text-decoration: none;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-media a:hover {
+transform: scale(1.1);
+}
+
+.social-media .yelp {
+background-color: #af0606; /* Yelp red */
+}
+
+.social-media .yelp:hover {
+background-color: #c30808;
+}
+
+.social-media .fb {
+background-color: #3b5998; /* Facebook blue */
+}
+
+.social-media .fb:hover {
+background-color: #2d4373;
+}
+
+.social-media .instagram {
+background-color: #e4405f; /* Instagram gradient pink */
+}
+
+.social-media .instagram:hover {
+background-color: #d62957;
+}
+
+
 /******************* FOOTER **********************/
 
 section.footer {
@@ -735,6 +809,14 @@ section.footer {
         padding: 20px 40px;
     }
     
+    .social-media h3 {
+        text-align: center;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
