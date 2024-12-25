@@ -622,14 +622,14 @@ section.footer {
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
         /* background-color: red; */
     }
 
     .content h3 {
-        text-align: center;
-        width: 80%;
+        text-align: left;
+        /* width: 80%; */
     }
 
     .content .about h3 {
@@ -700,7 +700,7 @@ section.footer {
     .heading-small p {
         font-size: 1.25rem;
         text-align: center;
-        width: 70%;
+        width: 90%;
     }
 
     .details-list ul {
@@ -734,9 +734,9 @@ section.footer {
     
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     section h1 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
     div.heading-small p {
@@ -744,6 +744,14 @@ section.footer {
         font-size: 1.25rem;
         line-height: 1.4;
 
+    }
+
+    .services h2 {
+        font-size: 1.75rem;
+    }
+
+    .details-list li {
+        font-size: 1.4rem;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */

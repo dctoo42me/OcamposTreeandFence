@@ -56,10 +56,10 @@ galleryImages.forEach(image => {
 });
 
 // Close modal when close button is clicked
-closeModalBtn.addEventListener('click', function() {
+if (closeModalBtn) {closeModalBtn.addEventListener('click', function() {
     setTimeout(closeModal, 5);
 });
-
+}
 // Close modal when clicking outside the modal content
 window.addEventListener('touchend', function(event) {
     if (event.target === modal) {
