@@ -395,6 +395,7 @@ button:active {
     max-width: 800px;
     max-height: 100%;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .modal-images {
@@ -407,7 +408,7 @@ button:active {
 .modal-images img {
     width: 100%; /* Full width of the modal */
     max-width: 600px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     cursor: pointer;
 }
 
@@ -707,6 +708,7 @@ section.footer {
     .content h3 {
         text-align: left;
         /* width: 80%; */
+        font-size: 1rem;
     }
 
     .content .about h3 {
@@ -828,7 +830,16 @@ section.footer {
 
         font-size: 1.25rem;
         line-height: 1.4;
+        /* background-color: red; */
+    }
 
+    div .page {
+        width: 100%;
+    }
+
+    div .hidden {
+        /* background-color: red; */
+        width: 100%;
     }
 
     
